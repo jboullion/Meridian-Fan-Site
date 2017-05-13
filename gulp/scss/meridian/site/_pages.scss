@@ -1,0 +1,222 @@
+//CREATURES, REAGENTS
+.sort-btns { text-align: center;
+  .col-sm-4                   {
+    width: 33%; float: left; margin-bottom: 0px;
+    @media (max-width: $screen-tn-max) { width: 100%;  }
+  }
+  button.sort {
+    //@media (max-width: $screen-xs-max) { width: 100%; }
+
+  }
+}
+
+#refine             {
+  label             {
+    @media (max-width:480px) { margin-right:0; margin-bottom: 10px;}
+  }
+}
+#sort-holder        { margin: 20px 0;
+  label             { margin-bottom: 10px; }
+}
+
+#images-wrap        { text-align: center; margin-top: 30px; width: 100%;
+  p.title           { font-weight: bold; line-height: 18px; margin: 0px; font-size: 14px; height: 80px; padding: 4px; background-color: #f0f0f0;
+    small           { font-wright: normal; }
+    @media (max-width:$screen-sm-max) { font-size: 13px; line-height: 16px; height: 74px; }
+  }
+  .image-div        { border: 3px outset #676767; margin: 0px 10px 10px; cursor: pointer; display: inline-block; width: 140px; overflow: hidden; position: relative;
+    .hover-cover    { transition: all 0.15s ease-in; background-color: rgba(103,103,103, 0.8);  display: block; height: 140px; padding: 5px; position: absolute; right: 0px; top: -140px; width: 140px;
+      a             { display: block; }
+      p             { color: white;  }
+      p.max-hp,
+      p.max-karma   { font-size: 16px; line-height: 30px; margin-bottom: 0px;
+        @media (max-width:$screen-sm-max) { font-size: 12px; line-height: 20px; }
+      }
+
+
+      table         { height: 140px; vertical-align: middle; width: 100%;
+        @media (max-width:$screen-sm-max) { height: 90px;  }
+      }
+      @media (max-width:$screen-sm-max) { height:100px; top: -100px; width: 100px; }
+    }
+    &:hover         {
+      .hover-cover  { top:0px; }
+    }
+
+    .img-wrap       { height: 126px;
+      position: relative;
+      text-align: center;
+      padding: 6px;
+      background-color: #E7E7E7;
+      width: 100%;
+      td            { vertical-align: bottom; }
+
+      img           { max-width: 120px; max-height: 120px;
+        @media (max-width:$screen-sm-max) { max-width: 80px; max-height: 80px; }
+      }
+      @media (max-width:$screen-sm-max) { height:100px; max-height: 100px; width: 100px; }
+    }
+
+    &.locations     {
+      .img-wrap     {
+        td          { vertical-align: inherit !important; }
+      }
+    }
+
+    @media (max-width:$screen-sm-max) { width: 100px; margin: 0px 6px 6px; }
+
+
+  }
+}
+
+//SINGLE PAGES
+#listings             {
+  li                  { margin-bottom: 10px;
+    .list-img         { width: 50px; padding-right: 20px; }
+  }
+}
+
+//SCHOOLS
+#school-wrap          { text-align: center;
+  .school             { display: inline-block; padding: 0px 20px; text-decoration: none; font-size: 18px; line-height: 32px; margin-top: 20px; width: 33%;
+    a                 { border: 3px outset; display: block; color: #FFFFFF; border-radius: 30px; text-shadow: 1px 2px #000000;
+      &:hover         {  }
+      &:active        { border: 3px inset; }
+    }
+    .faren            { @include gradient-vertical($faren-light, $faren-dark);
+      &:hover         { @include gradient-vertical($faren-light, $faren-light); }
+      &:active        { @include gradient-vertical($faren-dark, $faren-light); }
+    }
+    .kraanan          { @include gradient-vertical($kraanan-light, $kraanan-dark);
+      &:hover         { @include gradient-vertical($kraanan-light, $kraanan-light); }
+      &:active        { @include gradient-vertical($kraanan-dark, $kraanan-light); }
+    }
+    .jala             { @include gradient-vertical($jala-light, $jala-dark);
+      &:hover         { @include gradient-vertical($jala-light, $jala-light); }
+      &:active        { @include gradient-vertical($jala-dark, $jala-light); }
+    }
+    .qor              { @include gradient-vertical($qor-light, $qor-dark);
+      &:hover         { @include gradient-vertical($qor-light, $qor-light); }
+      &:active        { @include gradient-vertical($qor-dark, $qor-light); }
+    }
+    .riija            { @include gradient-vertical($riija-light, $riija-dark);
+      &:hover         { @include gradient-vertical($riija-light, $riija-light); }
+      &:active        { @include gradient-vertical($riija-dark, $riija-light); }
+    }
+    .shalille         { @include gradient-vertical($shal-light, $shal-dark);
+      &:hover         { @include gradient-vertical($shal-light, $shal-light); }
+      &:active        { @include gradient-vertical($shal-dark, $shal-light); }
+    }
+    .weaponcraft      { @include gradient-vertical($wc-light, $wc-dark);
+      &:hover         { @include gradient-vertical($wc-light, $wc-light); }
+      &:active        { @include gradient-vertical($wc-dark, $wc-light); }
+    }
+    @media (max-width:$screen-sm-max) { width: 50%; }
+    @media (max-width:$screen-tn-max) { width: 100%; }
+  }
+}
+
+body.page-template-tpl-school #spell-menu {
+  h1                  { color: #FFF; }
+}
+
+#screen-shade         { background-color: rgba(0,0,0,.5); display: none; height: 100%; width: 100%; position: fixed; z-index: 70; top: 0px; left: 0px; }
+
+#spells-wrap          {
+  .open-spells-div    { padding: 0px 15px; width: 100%;
+    @media (max-width:$screen-sm-max) {
+      padding: 0px;
+    }
+  }
+  #spell-menu         { background: url($img-path + 'background/menu-back.png'); margin-top: 0px; border: 2px outset; border-left-color: #cdcdcd; border-top-color: #cdcdcd; border-right-color: #000000; border-bottom-color: #000000; padding: 15px;
+    h1                { color: #fff; @extend .font-slab; margin: 0px 0px 10px; text-transform: none; text-shadow: -2px -1px #000; }
+    @media (max-width:$screen-sm-max) { position: fixed; left: -256px; width: 256px; top: -15px; overflow-y: scroll; z-index: 80; height: 100%;
+
+      h1              {  }
+      h3              { cursor: pointer; }
+      > ul            {
+        li            {
+          ul          { display: none; }
+        }
+      }
+
+
+    }
+
+    @media (max-width:$screen-sm-max) { padding-left: 20px; padding-top: 40px; overflow: auto; }
+  }
+
+  #entry-target       { }
+  .school-levels      { padding-left: 0px; cursor: pointer;
+      li              { list-style: none;
+        h3            { color: #fff; @extend .font-slab; text-transform: none; font-size: 20px; text-shadow: -2px -1px #000; margin-top: 0; }
+        ul            { padding-left: 25px; margin-bottom: 10px;
+          li          { padding: 4px 0px; font-family: $body-font; font-size: 16px; line-height: 24px; text-decoration: none; text-shadow: -1px -1px #000; text-transform: lowercase;
+            a         { color: #FFF !important; font-size: 16px; line-height: 20px; font-weight: 400;  display: block;
+              img     { margin: -2px 5px 0px -25px; width: 20px; height: 20px; }
+            }
+          }
+        }
+      }
+
+      @media (max-width:$screen-sm-max) {
+        li              {
+          h3            { padding: 8px 0; }
+          ul            {
+            li          {
+              a         { padding: 6px 0; }
+            }
+          }
+        }
+      }
+  }
+}
+
+/**
+ * SEARCH PAGE
+ */
+ body.search        {
+   .entry           { margin-bottom: 20px; }
+ }
+
+
+/**
+ * LOCATIONS
+ */
+
+
+
+
+/**
+ * LEVEL CALCULATOR
+ */
+#lvl-calc           {
+  .form-group       {
+    label,
+    input,
+    select          { display: inline-block; }
+
+    label           { color: #000; font-size: 16px; margin: 0; text-shadow: none; width: 40%; }
+
+    input,
+    select          { width: 60%; }
+  }
+
+  .half-size strong { display: inline-block; width: 40%; }
+
+  .current input    { padding-right: 2px; width: 19%; margin-right: 1%; }
+
+  @media (min-width:$screen-sm-min) {
+    .half-size      { width: 50%; }
+  }
+
+  @media (max-width: 480px) {
+    .form-group     {
+      label,
+      input,
+      select        { display: block; width: 100%; }
+    }
+
+    .half-size strong { display: block; width: 100%; }
+  }
+}

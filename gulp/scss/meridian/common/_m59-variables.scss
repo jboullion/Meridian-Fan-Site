@@ -1,0 +1,80 @@
+// dimensions
+$mobile-navbar-width:256px;
+$screen-tn-max: 480px;
+
+$screen-tiny-max: ($screen-xs-min - 1);
+
+//folder locations
+$img-path: '../images/';
+
+//grays
+$light-gray: #f1f1f1;
+$e7-gray: #e7e7e7;
+$upgraydd: #dddddd;
+$dark-gray: #444444;
+$degrees-of-gray: #666666;
+$gray-problems: #999999;
+$almost-black: #231f20;
+$graaaaaay: #aaaaaa;
+$gracccie: #cccccc;
+$mid-gray: #aeaeae;
+
+//colors
+$gold: #f0d019;
+
+$light-orange: #FFA000;
+$orange: #FF681F;
+$content-background: #787878;
+
+$faren-light: #900000;
+$faren-dark: #3d0000;
+
+$jala-light: #008c1e;
+$jala-dark: #005412;
+
+$kraanan-light: #213194;
+$kraanan-dark: #051052;
+
+$qor-light: #616161;
+$qor-dark: #373737;
+
+$riija-light: #6d2b83;
+$riija-dark: #371047;
+
+$shal-light: #999999;
+$shal-dark: #585858;
+
+$wc-light: #ad8463;
+$wc-dark: #522918;
+
+//text
+$dark-text: #000;
+
+//https://github.com/Daenks/Meridian59_103/commit/6e09be6d85502147e6919a71f996d54004e3790f
+$text-dark-red: rgb(128,0,0);
+$text-bright-red: rgb(200,0,0);
+$text-dark-green: rgb(0,100,0);
+$text-light-green: rgb(0,255,0);
+$text-dark-blue: rgb(0,0,255);
+$text-yellow: rgb(230, 230,  25);
+$text-pink: rgb(178,  40, 213);
+$text-orange: rgb(245, 120,  10);
+$text-aqua: rgb(25, 124,  93);
+$text-cyan: rgb(46, 234, 241);
+$text-purple: rgb(143,  38, 170);
+$text-teal: rgb(11,  59, 112);
+$text-dark-gray: rgb(85,  87,  83);
+$text-violet: rgb(128,   0, 128);
+$text-magenta: rgb(255,   0, 255);
+$text-admin: rgb(127,0,128);
+
+//font - links
+$anchor-color: $text-violet;
+$anchor-hover: $text-magenta;
+
+//fonts
+.font-open { font-family: Arial, sans-serif; }
+.font-slab { font-family: Arial, sans-serif; }
+
+$body-font: Arial, sans-serif;
+$header-font: Arial, sans-serif;

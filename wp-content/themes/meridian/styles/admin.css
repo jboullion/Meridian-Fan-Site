@@ -1,0 +1,16 @@
+.acf-field input[type="text"],
+.acf-field input[type="url"],
+.acf-field input[type="email"] { line-height:20px !important; }
+
+/* Prevent chrome from displaying missing images when font awesome icons are used */
+#adminmenu .wp-menu-image img { display: none; }
+
+#wpbody-content .wp-editor-area { color: #000; }
+
+.m59-sortable	{ counter-reset:sortable_counter; margin:0; padding:0; }
+.m59-sortable li	{ background:#eee; border:1px solid #aaa; cursor:move; line-height:18px; min-height:18px; padding:5px 10px; }
+.m59-sortable li &:not(.ui-state-highlight)	{ counter-increment:sortable_counter; }
+.m59-sortable li &:not(.ui-state-highlight)&:before { content:counter(sortable_counter) "."; }
+.m59-sortable li.ui-state-highlight	{ opacity:0.3; }
+
+.acf-fields .acf-field.optional > .acf-label label:after { content:"(Optional)"; color:#db0000; font-size:10px; font-weight:bold; margin-left:5px; }

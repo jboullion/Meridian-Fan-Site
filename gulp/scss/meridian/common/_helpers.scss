@@ -1,0 +1,207 @@
+.font-small					{ font-size: 60%; }
+.font-larger				{ font-size: 130%; }
+
+.font-bold					{ font-weight: bold; }
+.font-normal				{ font-weight: 400; }
+.font-light					{ font-weight: 300; }
+
+.font-italic				{ font-style: italic; }
+.font-uppercase				{ text-transform: uppercase; }
+
+/*
+.font-header				{ font-family: $header-font; }
+.font-body					{ font-family: $body-font; }
+*/
+.text-center				{ text-align: center; }
+.text-right					{ text-align: right; }
+
+.white-text					{ color: #FFFFFF; }
+.black-text					{ color: #000000; }
+
+.hidden						{ display: none; }
+.clear						{ clear: both; }
+
+.wp-caption-text,
+.caption					{ color: $degrees-of-gray; font-size: 14px; font-style: italic; line-height: 20px; }
+
+.display-flex				{ display: flex; flex-wrap: wrap; }
+.display-table				{ display: table; }
+.display-row				{ display: table-row; }
+
+.border-bottom				{ border-bottom: 1px solid $upgraydd; }
+
+.pad-me						{ padding: 15px; }
+.center-block				{ margin: 0px auto; }
+.relative					{ position: relative; }
+
+.aligncenter				{
+	&, &dl					{ display:block; margin-left:auto; margin-right:auto; }
+}
+
+.alignleft					{ float: left; margin-right:20px; margin-bottom: 10px; }
+
+.alignright					{ float: right; margin-left:20px; margin-bottom: 10px; }
+
+.center-list				{ float: right; left:-50%; position:relative;
+	ul						{ left:50%; list-style:none; margin:0; padding:0; position:relative;
+		li					{ float: left; }
+	}
+}
+
+.border-popout {
+	background: url(../images/background/menu-back.png);
+	border: 2px outset;
+	border-left-color: #cdcdcd;
+	border-top-color: #cdcdcd;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	color: #FFFFFF;
+}
+
+.border-indent {
+	background: url(../images/background/menu-back.png);
+	border: 2px inset;
+	border-left-color: #000000;
+	border-top-color: #000000;
+	border-right-color: #cdcdcd;
+	border-bottom-color: #cdcdcd;
+	color: #FFFFFF;
+}
+
+.table.table-noborder		{
+	thead, tbody, tfoot		{
+		tr					{
+			th, td			{ border:0; }
+		}
+	}
+}
+
+.modal-open					{ overflow: auto; }
+
+.setup-background			{ background-position: center center; background-size: cover; background-repeat: no-repeat; }
+
+.grayscale {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(1); /* Old WebKit */
+	filter: grayscale(1);
+}
+
+//https://maximilianhoffmann.com/posts/better-font-rendering-on-osx
+//light on dark aliasing
+.txt-antialiased			{ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-smoothing: antialiased; }
+
+//dark on light aliasing
+//.txt-antialiased            { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; font-smoothing:antialiased; }
+
+span.required				{ color: #FF0000; }
+span.spacer					{ margin: 0px 10px; }
+span.right-spacer			{ margin-right: 30px; }
+
+.divider					{ height: 1px; margin: 20px 0px; width: 70px;
+	&.divider-primary		{ background-color: #000; }
+	&.divider-primary-thick	{ background-color: #000; height: 3px; }
+}
+
+
+
+
+/* Creates an underline that is overlayed by a text shadow for a neat effect. Mostly used for anchor links. */
+.shadow-decoration {
+	background-image: linear-gradient(to top, $anchor-hover 0%, $anchor-hover 100%);
+	background-size: 2px 2px;
+	background-repeat: repeat-x;
+	background-position: 0 100%;
+	text-shadow: 1px 0.07em 0 #fff, -1px 0.07em 0 #FFF;
+}
+
+/* Prevent our a.btn from being affected */
+.no-shadow-decoration {
+	background-image: none;
+	background-size: 0 0;
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+	text-shadow: none;
+}
+
+/**
+ * Used to create a 16:9 aspect ratio for a video.
+ *
+ * usage: <div class="m59-video"><iframe src="//www.youtube.com/embed/{ID}" allowFullscreen="1"></iframe></div>
+ */
+.m59-video					{ text-align: center; margin-bottom: 20px;
+	@media (max-width: $screen-xs-max) {
+		margin-bottom: 20px; position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0;
+	}
+
+	iframe					{ border: 0;
+
+		@media (min-width: $screen-sm-min) {
+			height: 314px; width: 560px;
+		}
+
+		@media (max-width: $screen-xs-max) {
+			position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+		}
+
+	}
+
+	span					{ display: block; font-size: 12px; }
+}
+
+//YOU TUBE VIDEO WRAPPER
+.videoWrapper				{ position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0; margin-bottom: 30px;
+	iframe					{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+}
+
+
+//SITE WIDE MEDIA QUERIES
+//Tiny Phones (480px) and below
+@media(max-width: $screen-tiny-max) {
+	.tiny-only				{ display: block; }
+}
+
+// Tiny Phones (480px) and above
+@media (min-width: $screen-xs-min) {
+	.tiny-only				{ display: none; }
+}
+
+//Tablet and Smaller screens (789px) and below
+@media(max-width: $screen-xs-max) {
+	div.row					{ margin: 0px; }
+	.medium-show			{ display: none; }
+
+}
+
+// Tablet and Larger (789px) and above
+@media (min-width: $screen-sm-min) {
+
+}
+
+.medium-only				{ display: none; }
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+	.medium-only			{ display: block; }
+}
+
+// Desktop (991px) and below
+@media (max-width: $screen-sm-max) {
+	.mobile-hide			{ display: none; }
+	.alignright,
+	.alignleft				{ margin: 0px; margin-bottom: 10px; float: none; display: block; }
+}
+
+// Desktop (992px) and above
+@media (min-width: $screen-md-min) {
+	.desktop-hide			{ display: none; }
+
+}
+
+@media (max-width: $screen-md-max) {
+	.fullscreen-only		{ display: none !important; }
+	.fullscreen-hide		{ display: block; }
+}
+
+// Fullscreen (1200px) and above
+@media (min-width: $screen-lg-min) {
+	.fullscreen-only		{ display: block; }
+	.fullscreen-hide		{ display: none; }
+}

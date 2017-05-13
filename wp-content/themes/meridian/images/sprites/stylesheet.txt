@@ -1,0 +1,59 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-background-repeat-gray_4bbdfbeb0ab5023bdc07fda889099ba1 {
+    width: 77px;
+    height: 64px;
+    background-position: -5px -5px;
+}
+
+.sprite-bottom-left_6391d2ce57d9d84b19193f4269cabab5 {
+    width: 80px;
+    height: 80px;
+    background-position: -92px -5px;
+}
+
+.sprite-bottom-right_709fba078a218f6d97384c59627cac00 {
+    width: 80px;
+    height: 80px;
+    background-position: -5px -95px;
+}
+
+.sprite-menu-back_94d89dc5545ad181a697026ab2540051 {
+    width: 100px;
+    height: 100px;
+    background-position: -95px -95px;
+}
+
+.sprite-menu-btn_826e6eb424781481bfce059c2bdb16e8 {
+    width: 48px;
+    height: 40px;
+    background-position: -182px -5px;
+}
+
+.sprite-side-repeater_f2f26873a4fdce463acc6f490cb41fcf {
+    width: 10px;
+    height: 10px;
+    background-position: -240px -5px;
+}
+
+.sprite-top-left-edge_03e8fe6e97d03e936cfaf9b6cb8ce13d {
+    width: 80px;
+    height: 80px;
+    background-position: -205px -55px;
+}
+
+.sprite-top-right-edge_e517a0ee84825b59c02f2dfaabf05749 {
+    width: 81px;
+    height: 80px;
+    background-position: -205px -145px;
+}
+
+.sprite-vertical-repeater_a0883ebd9c087298eab9810f428eccb4 {
+    width: 10px;
+    height: 10px;
+    background-position: -260px -5px;
+}

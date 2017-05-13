@@ -1,0 +1,7 @@
+.m59-icons-icon { font-family:FontAwesome !important; }
+#m59-icon-set { width:600px; height:400px; overflow-y:auto; }
+#m59-icon-set ul, #m59-icon-set li { list-style-type:none; list-style:none; margin:0; padding:0; }
+#m59-icon-set li { display:block; float:left; margin:5px; width:30px; height:30px; }
+#m59-icon-set i { font-family:FontAwesome; font-size:30px; color:#000000; }
+#m59-icon-set li.selected i { color:#4444CC; }
+#m59-icon-set li:hover { cursor:pointer; }

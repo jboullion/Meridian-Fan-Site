@@ -45,3 +45,23 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#Ignore the WordPress base files
+wp-admin/*
+wp-config/*
+wp-includes/*
+wp-content/plugins/*
+wp-content/uploads/*
+wp-content/index.php
+wp-content/install.php
+wp-content/themes/index.php
+wp-*.php
+xmlrpc.php
+readme.html
+error_log
+index.php
+default.html
+license.txt
+gulp/scss/bootstrap*
+gulp/scss/fontawesome/*
+gulp/scripts/bootstrapv4/*

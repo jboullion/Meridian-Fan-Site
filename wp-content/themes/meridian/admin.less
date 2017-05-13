@@ -1,0 +1,24 @@
+.plugins											{
+	#wp-less										{
+		.activate								{
+			&:before								{ color:#aaa; content:'Activation Disabled'; }
+			a										{ display:none; }
+		}
+	}
+}
+
+.m59-sortable									{ counter-reset:sortable_counter; margin:0; padding:0;
+	li												{ background:#eee; border:1px solid #aaa; cursor:move; line-height:18px; min-height:18px; padding:5px 10px;
+		&:not(.ui-state-highlight)			{ counter-increment:sortable_counter;
+			&:before								{ content:counter(sortable_counter) "."; }
+		}
+		&.ui-state-highlight					{ opacity:0.3; }
+	}
+}
+
+
+.column-maximum_hp,
+.column-max_karma,
+.column-level,
+.column-school,
+.column-weight { text-align: center; width: 10% !important; overflow:hidden }
